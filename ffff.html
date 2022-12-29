@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>application form</title>
+<style type="text/css">
+
+.bordered{width:1280px;height:600px;padding:20px;border:10px groove yellowgreen;}
+ 
+p{font-size:1.3em;font-family:arial;}
+
+h7{font-family:Arial; color:brown;font-size:20pt;text-align:left;}
+
+body{background-image:url(index.jpg);
+background-position:top right;
+background-repeat:no-repeat;
+background-attachment:absolute;
+background-color:lightblue;}
+
+p{font-size:30 pt;
+color:green;
+text-indent:1em;
+font-family:arial;}
+
+<link rel="stylesheet" type="text/css" 
+	href="style.css"> 
+
+
+</style>
+<div class="bordered">
+</head>
+
+<body>
+
+<strong><CENTER><h7>STOCK MAINTANANCE FORM </h7></CENTER></strong><br>
+
+<form method="post" action="new.php" >
+
+<p><label>product name:<input name="productname" type="text" placeholder="name" size="15" maxlength="20"></label></p>
+
+<p><label>product id:<input name="productid" type="number" size="8"maxlength="14"></label></p>
+</label></p>
+
+
+<p><label>product colour:<input name="productcolor"type="text" placeholder="color"size="25"maxlength="30"></label>
+</p>
+
+<p><label>product quantity:<input name="productquantity"type="number" size="8"maxlength="14"></label></p>
+
+<p><label>product brand:<input name="productbrand"type="text" placeholder="brand"size="25"maxlength="30">
+</label></p>
+
+<p><label>expired date:<input name="expireddate"type="date" size="7"maxlength="14">
+</label></p>
+
+<p><strong>product availability:</strong><br>
+<label>yes
+<input name="productavail" type="radio" value="yes" checked></label>
+
+<label>no
+<input name="productavail" type="radio" value="no" ></label></p>
+
+<p><label>product sold/bought:<input name="sold" type="text" size="5" maxlength="10"></label></p>
+
+<input type="submit" value="submit">
+<input type="reset" value="clear">
+
+</div>
+</form>
+</body>
+</html>
